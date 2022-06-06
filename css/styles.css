@@ -53,6 +53,7 @@ img{
 }
 
 .section-title{
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
@@ -116,6 +117,7 @@ img{
     margin-right: 93px;
 }
 .menu-link{
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -152,6 +154,8 @@ img{
 }
 .page-header-mail,
 .page-header-tel{
+    font-weight: 500;
+
     color:var(--secondary-text-color);
     display:flex;
     align-items: center;
@@ -181,9 +185,13 @@ img{
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../images/hero/bg.jpg);
     background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
     max-width: 1600px;
 }
 
@@ -402,37 +410,37 @@ img{
     justify-content: center;
 }
 
+.client-list-item{
+    width: 170px;
+    height:92px;
+}
+
 .client-list-link{
     display:flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+
+    width:100%;
+    height: 100%;
+    border: solid 1px var(--social-icon-color);
+    border-radius: 5px;
+    color: var(--social-icon-color);
 }
 
 .client-list-item:not(:last-child){
     margin-right: 30px;
 }
-
-.client-list-item{
-border: solid 1px var(--social-icon-color);
-border-radius: 5px;
-}
    
 .client-list-icon{
-    fill:var(--social-icon-color)
+    fill:currentColor;
 }
 
-.client-list-item:hover,
-.client-list-item:focus{
-    border:solid 1px var(--accent-color);
-    border-radius: 5px;
+.client-list-link:hover,
+.client-list-link:focus{
+    border-color: var(--accent-color);
+    color: var(--accent-color);
 }
 
-.client-list-icon:hover,
-.client-list-icon:focus{
-    fill: var(--accent-color);
-}
 /* =======/PERMANENT CLIENTS=======*/
 
     /* =======FOOTER======= */
@@ -456,9 +464,11 @@ border-radius: 5px;
     margin-bottom: 20px;
 }
 
-.contact-list{
+.left-side {
     margin-right: 70px;
+}
 
+.contact-list{
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -536,6 +546,7 @@ border-radius: 5px;
 
     font-family: inherit;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.03em;
     cursor: pointer;
@@ -575,8 +586,13 @@ border-radius: 5px;
     background-color: var(--auxiliary-light-text-color);
 }
 
-.cards-list-item{
+.project-cards-link{
+    display: block;
     background: var(--auxiliary-light-text-color);
+}
+
+.project-cards-link:hover,
+.project-cards-link:focus{
     border: 1px solid #EEEEEE;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -587,6 +603,7 @@ border-radius: 5px;
     font-size: 18px;
     line-height: 36px;
     letter-spacing: 0.06em;
+    color: var(--auxiliary-dark-text-color);
     }
 
 .project-text{
